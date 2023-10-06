@@ -1,0 +1,323 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* montserrat-regular - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/montserrat-v25-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/montserrat-v25-cyrillic-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/montserrat-v25-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-800 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/fonts/montserrat-v25-cyrillic-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-900 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/montserrat-v25-cyrillic-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html{
+	box-sizing: border-box;
+}
+
+*, *::after, *::before{
+	box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Header styles start */
+
+.header{
+    height: 900px;
+    background: linear-gradient(180deg, #EDA418 47.40%, rgba(237, 164, 24, 0.00) 100%);
+}
+
+.header_nav{
+    padding-top: 105px;
+    padding-left: 130px;
+    padding-right: 300px;
+    margin-bottom: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header_logo{
+    align-items: center;
+}
+
+.header_logo_link{
+    text-decoration: none;
+    color: black;
+}
+
+.header_menu_links{
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link:hover, .nav_link:active, .nav_link:focus{
+    opacity: .6;
+}
+
+.nav_link:first-child{
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.header_nav_item{
+    margin-right: 100px;
+}
+
+.header_nav_item:last-child{
+    margin-right: 0;
+}
+
+.header_basket{
+    align-items: center;
+}
+
+.basket_link:active{
+    opacity: 0.8;
+}
+
+.header_promo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 217px;
+    margin-bottom: 106px;
+}
+
+.header_promo_title{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    padding-top: 190px;
+}
+
+.header_promo_text{
+    font-size: 16px;
+    font-weight: 400; 
+    margin-bottom: 48px;  
+}
+
+.header_promo_button{
+    border: 0;
+    border-radius: 50px;
+    background: #E52626;
+    width: 142.259px;
+    height: 60px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header_promo_button:hover{
+    cursor: pointer;
+}
+
+.header_promo_button:active{
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+/* Header styles end */
+
+/* Main styles start */
+
+.main{
+    padding-right: 87px;
+    padding-left: 87px;
+}
+
+.main_menu{
+    margin-bottom: 50px;
+}
+
+.main_menu_title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+}
+
+.main_menu_text{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.main_menu_list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.menu_item_link{
+    text-decoration: none;
+    color: #000;
+}
+
+.menu_item_link:hover, .menu_item_link:active, .menu_item_link:focus{
+    opacity: 0.6;
+}
+.link_text{
+    display: flex;
+    justify-content: center;
+}
+
+/* Main styles end */
+
+/* Footer styles start */
+
+.footer{
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #EDA61D 100%);
+    height: 450px;
+    padding-top: 157px;
+}
+
+.footer_loyaltis{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    padding-left: 280px;
+    padding-right: 360px;
+}
+
+.footer_list_item{
+    margin-right: 101px;
+}
+
+.footer_list_item:last-child{
+    margin-right: 0px;
+}
+
+.footer_item_link:first-child{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer_item_link{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer_item_link:hover, .footer_item_link:active, .footer_item_link:focus{
+    opacity: 0.6;
+}
+
+.footer_titles{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_title_text{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.footer_title_text:last-child{
+    margin-bottom: 35px;
+}
+
+.footer_contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+/* Footer styles end */
