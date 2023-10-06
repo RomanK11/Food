@@ -2,7 +2,6 @@ package com.freeCinema.cinema.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ModelAttribute;
 
 import com.freeCinema.cinema.model.User;
 import com.freeCinema.cinema.repository.UserRepository;

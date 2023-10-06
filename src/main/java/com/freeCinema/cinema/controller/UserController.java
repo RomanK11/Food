@@ -1,17 +1,9 @@
 package com.freeCinema.cinema.controller;
 
-import org.apache.logging.log4j.message.EntryMessage;
-import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.jdbc.IncorrectResultSetColumnCountException;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.client.HttpServerErrorException.InternalServerError;
 
 import com.freeCinema.cinema.model.User;
 import com.freeCinema.cinema.repository.UserRepository;
@@ -33,10 +25,11 @@ import com.freeCinema.cinema.service.InternalServerException;
 @Controller
 public class UserController {
     private UserRepository userRepository;
-    
+
     public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
+
     @GetMapping(path = "/registration")
     public String getQuestionForm() {
         return "registration";
@@ -54,17 +47,17 @@ public class UserController {
     @PostMapping(path = "/registration")
     public String handleRegistrationForm(@ModelAttribute("user") User user) {
         try {
-            if(existsByField(user.getUsername(), user.getPassword()) == false) {
-            userRepository.save(user);
-        }
-        }catch(InternalServerException ex) {
+            if (existsByField(user.getUsername(), user.getPassword()) == false) {
+                userRepository.save(user);
+            }
+        } catch (InternalServerException ex) {
             System.out.println("ex");
         }
-        return "jj";
+        return "Succes";
     }
 
     @ModelAttribute(name = "user")
-    public User user() { 
+    public User user() {
         return new User();
     }
 }
