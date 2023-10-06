@@ -24,7 +24,7 @@ public class AuthController {
     @PostMapping("/login")
     public String authenticate(@RequestParam String username, @RequestParam String password) {
         if (authService.authenticate(username, password)) {
-            return "loginJJ";
+            return "loginSucces";
         } else {
             return "error";
         }
