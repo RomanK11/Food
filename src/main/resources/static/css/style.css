@@ -104,27 +104,21 @@ body{
 /* Header styles start */
 
 .header{
-    height: 900px;
-    background: linear-gradient(180deg, #4c5961 47.40%, rgba(237, 164, 24, 0.00) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 
 .header_nav{
-    padding-top: 105px;
+    padding-top: 17px;
     padding-left: 130px;
     padding-right: 300px;
     margin-bottom: 17px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.header_logo{
-    align-items: center;
-}
-
-.header_logo_link{   
-    text-decoration: none;
-    color: black;
 }
 
 .header_menu_links{
@@ -159,31 +153,36 @@ body{
     margin-right: 0;
 }
 
-
-.header_login_href{
-    text-decoration: none;
-    color: #000;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.header_login_href:hover, .header_login_href:active, .header_login_href:focus{
-    opacity: .6;
-}
-
-.header_basket{
+.header_basket_btn{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 80px;
+    width: 80px;
+    border: none;
+    background-color: #F9D53F;
+    border-radius: 100px;
 }
 
-.basket_link:active{
+.header_basket_btn:hover{
+    cursor: pointer;
     opacity: 0.8;
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0px 0px 2px 2px rgb(70, 70, 70);
 }
+
+.header_basket_btn:active{
+    background-color: #4c5961;
+}
+
 
 /* Header styles end */
 
 /* Main styles start */
 
 .main{
+    background: linear-gradient(180deg, #4c5961 70%, rgba(237, 164, 24, 0.00) 100%);
     padding-right: 87px;
     padding-left: 87px;
 }
@@ -192,10 +191,62 @@ body{
     margin-bottom: 50px;
 }
 
+.menu_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_text{
+    padding-left: 50px;
+    text-indent: 80px;
+    color: white;
+}
+
+.menu_info_btn{
+    float: right;
+    margin-top: 50px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    background-color: #F9D53F;
+    height: 50px;
+    width: 180px;
+
+    
+}
+
+.menu_btn_text{
+
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: bold;
+    margin-right: 13px;
+    margin-left: 7px;
+}
+
+.menu_info_btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0px 0px 2px 2px rgb(70, 70, 70);
+}
+
+.menu_info_btn:active{
+    background-color: #4c5961;
+}
+
 .main_menu_title{
     display: flex;
     justify-content: center;
-    margin-bottom: 38px;
+    margin-bottom: 150px;
 }
 
 .main_menu_text{
