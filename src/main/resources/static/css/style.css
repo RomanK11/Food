@@ -50,7 +50,7 @@ table {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/montserrat-v25-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/montserrat-v25-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-500 - cyrillic */
   @font-face {
@@ -58,7 +58,7 @@ table {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    src: url('/fonts/montserrat-v25-cyrillic-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/montserrat-v25-cyrillic-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-700 - cyrillic */
   @font-face {
@@ -66,7 +66,7 @@ table {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url('/fonts/montserrat-v25-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/montserrat-v25-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-800 - cyrillic */
   @font-face {
@@ -74,7 +74,7 @@ table {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    src: url('/fonts/montserrat-v25-cyrillic-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/montserrat-v25-cyrillic-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* montserrat-900 - cyrillic */
   @font-face {
@@ -82,7 +82,7 @@ table {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
-    src: url('/fonts/montserrat-v25-cyrillic-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/montserrat-v25-cyrillic-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
 html{
@@ -104,6 +104,8 @@ body{
 /* Header styles start */
 
 .header{
+    box-shadow: 0px 0px 4px 4px #73b796;
+    background-color: #73b796;
     position: fixed;
     top: 0;
     left: 0;
@@ -133,14 +135,14 @@ body{
 }
 
 .nav_link:first-child{
-    color: #000;
+    color: white;
     font-size: 25px;
     font-weight: 700;
 }
 
 .nav_link{
     text-decoration: none;
-    color: #000;
+    color: white;
     font-size: 25px;
     font-weight: 500;
 }
@@ -160,7 +162,7 @@ body{
     height: 80px;
     width: 80px;
     border: none;
-    background-color: #F9D53F;
+    background-color: #017760;
     border-radius: 100px;
 }
 
@@ -173,7 +175,7 @@ body{
 }
 
 .header_basket_btn:active{
-    background-color: #4c5961;
+    background-color: #73b796;
 }
 
 
@@ -182,7 +184,7 @@ body{
 /* Main styles start */
 
 .main{
-    background: linear-gradient(180deg, #4c5961 70%, rgba(237, 164, 24, 0.00) 100%);
+    background: linear-gradient(180deg, #73b796 70%, rgba(237, 164, 24, 0.00) 100%);
     padding-right: 87px;
     padding-left: 87px;
 }
@@ -212,7 +214,7 @@ body{
     align-items: center;
     border-radius: 100px;
     border: none;
-    background-color: #F9D53F;
+    background-color: #017760;
     height: 50px;
     width: 180px;
 
@@ -240,7 +242,7 @@ body{
 }
 
 .menu_info_btn:active{
-    background-color: #4c5961;
+    background-color: #73b796;
 }
 
 .main_menu_title{
@@ -250,6 +252,7 @@ body{
 }
 
 .main_menu_text{
+    color: white;
     font-size: 45px;
     font-weight: 500;
 }
@@ -269,6 +272,7 @@ body{
     opacity: 0.6;
 }
 .link_text{
+    color: #017760;
     display: flex;
     justify-content: center;
 }
@@ -278,7 +282,7 @@ body{
 /* Footer styles start */
 
 .footer{
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #4c5961 100%);
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #73b796 100%);
     height: 450px;
     padding-top: 157px;
 }
